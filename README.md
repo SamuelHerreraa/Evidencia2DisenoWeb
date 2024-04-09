@@ -1,67 +1,31 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Proyecto de Gestión de Alumnos y Carreras
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto es una aplicación web desarrollada en Laravel para la gestión de alumnos y carreras en una institución educativa. Permite a los usuarios iniciar sesión, agregar y consultar alumnos y carreras, así como cerrar sesión de manera segura.
 
-## About Laravel
+## Características principales
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Inicio de sesión**: Los usuarios pueden iniciar sesión en la aplicación utilizando sus credenciales.
+- **Cierre de sesión**: Los usuarios pueden cerrar sesión de manera segura en la aplicación.
+- **Autenticación**: La aplicación utiliza el sistema de autenticación de Laravel para proteger las rutas y acciones relevantes.
+- **Agregar alumnos**: Los usuarios pueden agregar nuevos alumnos proporcionando su nombre, apellidos, fecha de nacimiento, carrera y estatus.
+- **Agregar carreras**: Los usuarios pueden agregar nuevas carreras proporcionando su nombre y descripción.
+- **Consultar alumnos**: Los usuarios pueden ver una lista de todos los alumnos registrados en la aplicación.
+- **Consultar carreras**: Los usuarios pueden ver una lista de todas las carreras registradas en la aplicación.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Base de datos
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+La aplicación utiliza una base de datos MySQL para almacenar la información de los alumnos y las carreras. La estructura de la base de datos incluye las siguientes tablas:
 
-## Learning Laravel
+- **students**: Almacena la información de los alumnos, incluyendo su nombre, apellidos, fecha de nacimiento, carrera y estatus.
+- **careers**: Almacena la información de las carreras, incluyendo su nombre y descripción.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Instalación
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. Clona el repositorio en tu máquina local.
+2. Instala las dependencias del proyecto utilizando Composer: `composer install`.
+3. Copia el archivo `.env.example` y renómbralo como `.env`. Configura tu base de datos en este archivo.
+4. Genera una nueva clave de aplicación: `php artisan key:generate`.
+5. Ejecuta las migraciones para crear las tablas de la base de datos: `php artisan migrate`.
+6. Inicia el servidor de desarrollo: `php artisan serve`.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Evidencia2DisenoWeb
+¡Ahora puedes acceder a la aplicación en tu navegador!
